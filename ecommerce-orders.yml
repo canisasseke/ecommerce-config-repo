@@ -1,0 +1,15 @@
+server.port=9003
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommercedb
+spring.datasource.username=dbuser
+spring.datasource.password=dbpassword
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.show-sql=true
+#défini l'encodage pour data.sql
+spring.datasource.sql-script-encoding=UTF-8
+#mes properties
+#config-server location
+# eureka config
+spring.cloud.discovery.enabled=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+management.endpoints.web.exposure.include=health,info,metrics
